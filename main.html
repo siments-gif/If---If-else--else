@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tester for skolebruk</h1>
+    <div>
+      <h2>La oss endre tekst</h2>
+      <button id="changeText">Change text</button>
+      <p id="oldText">Gammel tekst</p>
+    </div>
+    <div>
+      <h2>La oss endre tekst</h2>
+      <button id="changeArrayText">Change text</button>
+      <p id="arrayText">Start</p>
+    </div>
+    <div>
+      <h2>La oss teste passord</h2>
+      <input type="password" id="password" />
+      <p id="result"></p>
+      <button id="checkPassword">Sjekk passord</button>
+    </div>
+    <div>
+      <h2>La oss sjekke bruker</h2>
+      <button id="checkUser">Sjekk bruker</button>
+    </div>
+
+    <div id="myModal" class="modal">
+      <p>Password is valid! This is your modal message.</p>
+      <button id="return" type="button" onclick="closeModal()">Return</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+<style>
+  /* Style for the modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  .return {
+    color: #555;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+</style>
